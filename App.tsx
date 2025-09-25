@@ -976,7 +976,7 @@ const App: React.FC = () => {
                     </div>
                 )}
             </div>
-        }
+        
     
     // Default view after login/onboarding is the dashboard
     return <UserProfilePage 
