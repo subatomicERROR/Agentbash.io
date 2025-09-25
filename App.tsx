@@ -711,7 +711,7 @@ const App: React.FC = () => {
     setShowScriptBook(false);
     setShowPricing(false);
     setShowAddAgentModal(false);
-    setSafetyMode(true);
+    setSafetyMode(true); //
     setVerboseComments(false);
     setUseGoogleSearch(false);
     setSessions([]);
