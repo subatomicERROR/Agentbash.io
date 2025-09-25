@@ -1,0 +1,5 @@
+{
+  "name": "AgentBash",
+  "description": "An AI-powered multi-agent platform that generates automation scripts for various development tasks on Windows and Linux.",
+  "requestFramePermissions": []
+}

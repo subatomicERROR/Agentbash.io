@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-g" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgentBash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'dark-bg': '#000000', // Pitch Black
+              'dark-card': '#111111', // Very Dark Gray
+              'cyan-accent': '#22d3ee',
+              'cyan-accent-hover': '#67e8f9',
+              'text-primary': '#F9FAFB', // Off-white
+              'text-secondary': '#9CA3AF', // Medium gray
+              'border-dark': '#222222', // Dark border
+              'blur-purple': '#7c3aed',
+              // New background colors
+              'space-blue': '#1a237e',
+              'magic-pink': '#ff4081',
+            },
+            fontFamily: {
+              sans: ['"Roboto"', 'sans-serif'],
+              mono: ['"Roboto Mono"', 'monospace'],
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+              'pop-in': 'pop-in 0.3s ease-out both',
+              'slide-down': 'slide-down 0.3s ease-out forwards',
+              'thinking-dot-1': 'thinking-bounce 1.4s infinite ease-in-out both',
+              'thinking-dot-2': 'thinking-bounce 1.4s 0.16s infinite ease-in-out both',
+              'thinking-dot-3': 'thinking-bounce 1.4s 0.32s infinite ease-in-out both',
+              'blink': 'blink 1s step-end infinite',
+              // New animation for the background
+              'gradient-spin': 'gradient-spin 40s linear infinite',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'pop-in': {
+                '0%': { opacity: '0', transform: 'scale(0.98)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+              'slide-down': {
+                '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'thinking-bounce': {
+                '0%, 80%, 100%': { transform: 'scale(0)' },
+                '40%': { transform: 'scale(1.0)' },
+              },
+              'blink': {
+                '50%': { opacity: '0' },
+              },
+              // New keyframe for the background
+              'gradient-spin': {
+                '0%': { transform: 'rotate(0deg)' },
+                '100%': { transform: 'rotate(360deg)' },
+              },
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0",
+    "jszip": "https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-dark-bg text-text-primary font-sans">
+    <div id="root"></div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
